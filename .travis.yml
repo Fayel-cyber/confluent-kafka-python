@@ -12,6 +12,15 @@ jobs:
     python: "3.6"
     env: LD_LIBRARY_PATH="$PWD/tmp-build/lib"
     services: docker
+    
+  - name: "Source package verification with Python 3.6 (Linux_arm64)"
+    os: linux
+    language: python
+    dist: xenial
+    arch: arm64
+    python: "3.6"
+    env: LD_LIBRARY_PATH="$PWD/tmp-build/lib"
+    services: docker
 
 
 # Install test dependencies unconditionally
